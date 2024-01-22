@@ -344,3 +344,15 @@ body {
     }
 
 }
+@media screen and (max-width: 600px) {
+    .table tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
