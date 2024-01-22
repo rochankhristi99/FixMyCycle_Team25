@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intro to Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    <!-- <link href="css/rochan.css" rel="stylesheet"> -->
+    <link href="css/rochancss.css" rel="stylesheet">
+    <link href="css/keya.css" rel="stylesheet">
+    <link href="css/neeru.css" rel="stylesheet">
+    <link href="css/mudathir.css" rel="stylesheet">
+    <link href="form.css" rel="stylesheet">
+    <style>
+.hidden{
+    display: none;
+}
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container-fluid"> -->
+    <!--Navigation and Header Section Start-->
+    <nav class="navbar navbar-expand-lg bg_light_blue">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/Logo.png" class="nav-logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="service_booking.html">SERVICE BOOKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorials.html">TUTORIALS</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="buttonOrg">LOGIN</button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header Images-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item ">
+                <img src="img/carousel_img_1.jpg" class="d-block w-100 caro_img" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img src="img/carousel_img_2.jpg" class="d-block w-100 caro_img" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="img/carousel_img_3.jpg" class="d-block w-100 caro_img" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Overlay Content -->
+        <div class="d-block overlay">
+            <h6>YOU AND YOUR CYCLE DESERVE BETTER</h3>
+                <h1 class="text_title">Byscle <span class="text_org">Service</span> At<span class="text_org">
+                        Home</span></h1>
+
+                <button class="buttonOrg2">IF YOU NEED, WE HERE</button>
+        </div>
+        <a href="service_booking.html"><button class="ovrl_btn">Book Service</button></a>
+    </div>
+
+    <!--Navigation and Header Section 1 End-->
+
+
+    <!--Main Content Section Start-->
+    <div class="body_sec">
+
+        <h1 class="text_title mb-5 text-center">Service<span class="text_org"> Booking</span></h1>
+
+        <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-6">
+                <form class="row g-3">
+                    <div id="Form1">
+                        <div class="col-12">
+                            <label for="inputAddress" class="f-label">Date*</label>
+                            <input type="date" class="f-input" id="inputAddress" placeholder="DD/MM/YYYY">
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <label for="inputState" class="f-label">Time*</label>
+                            <select id="inputState" class="f-input">
+                                <option selected>Choose...</option>
+                                <option>10:00 - 12:00</option>
+                                <option>12:00 - 14:00</option>
+                                <option>14:00 - 16:00</option>
+                                <option>16:00 - 18:00</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 mb-5">
+                            <center>
+                                <button type="submit" onclick="toggleDivs()"
+                                    class="btn btn-primary btn-lg w-50 ">Continue</button>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div id="Form2" class="hidden">
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="f-label">SERVICE TYPE*</label>
+                            <fieldset class="row mb-3">
+
+                                <div class="col-sm-12">
+                                    <div class="form-check f-input">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Door Step Service
+                                        </label>
+                                    </div>
+                                    <div class="form-check f-input">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                            value="option2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Advanced Service
+                                        </label>
+                                    </div>
+                                    <div class="form-check f-input">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                            value="option3">
+                                        <label class="form-check-label" for="gridRadios3">
+                                            Pick and Drop
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="f-label">FULL NAME*</label>
+                            <input type="text" class="f-input" placeholder="First Name" id="inputEmail4">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="f-label"><br></label>
+                            <input type="text" class="f-input" placeholder="Last Name" id="inputPassword4">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="f-label">ADDRESS*</label>
+                            <input type="text" class="f-input" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="inputCity" class="f-label">CITY*</label>
+                            <input type="text" class="f-input" placeholder="CITY" id="inputCity">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="inputState" class="f-label">STATE*</label>
+                            <select id="inputState" class="f-input">
+                                <option selected>Choose...</option>
+                                <option>BANGLADESH</option>
+                                <option>FINLAND</option>
+                                <option>INDIA</option>
+                                <option>NIGERIA</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="inputZip" class="f-label">ZIP*</label>
+                            <input type="text" class="f-input" placeholder="Zip" id="inputZip">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="f-label">CONTACT*</label>
+                            <input type="text" class="f-input" id="inputAddress" placeholder="Contact">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="f-label">EMAIL*</label>
+                            <input type="email" class="f-input" id="inputAddress" placeholder="Email">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="f-label">ANY SPECIFIC ISSUE ?*</label>
+                            <textarea type="text" class="f-input" id="inputAddress"
+                                placeholder="Any Specific Issue ?"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="f-label text_org">PAYMENT*</label>
+                            <h6 class="my-3"><em>Visiting Charge : 10 €</em></h5>
+
+                                <h5 class="text_org mb-3">Payment Amount: 10 €</h4>
+                                    <a href="https://codepen.io/tarun-sai/full/yLNBoed" target="_blank"> <img
+                                            class="w-25" src="https://forms.app/static/img/paypal/card.png"></a>
+                        </div>
+
+
+                        <div class="col-12 mb-5">
+                            <center>
+                                <button type="submit" class="btn btn-primary btn-lg w-50 mt-5">Book</button>
+                            </center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+        </div>
+
+    </div>
+    <!--Main Content Section End-->
+
+
+
+
+
+
+    <!--Footer Section Start-->
+    <div class="bg_dark px-5 py-5 text-white">
+
+        <h3 class="fw-bolder mb-5"> CONTACT US</h3>
+        <table class="table ">
+            <tr>
+                <td>
+                    <h6>Reach Us At</h6>
+                </td>
+                <td>
+                    <h6 class="text_org">support@fixmycycle.com</h6>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6>Contact Number</h6>
+                </td>
+                <td>
+                    <h6 class="text_org">+358 XX XX XXX</h6>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Connect With Us
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-2x fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-2x fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"> <i
+                            class="fa-brands fa-2x fa-instagram"></i></a>
+
+                </td>
+            </tr>
+        </table>
+        <center>
+            <hr>
+
+            <span class="text-white"><em>@2024 FixMyCycle. All Rights Reserved.</em></span>
+
+        </center>
+
+    </div>
+    <!--Footer Section Start-->
+
+    <script>
+     
+    </script>
+    <!-- Bootstrap Javascript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="css/rochan.js"></script>
+</body>
+
+</html>
