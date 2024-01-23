@@ -182,44 +182,16 @@ body {
 }
 
 
-/**/
-@media screen and (min-width: 601px) {
-    .pick_your_color {
-        font-size: 1.25rem;
-    }   
-}
-
-
-@media screen and (max-width: 768px) {
-    .pick_your_color {
-        font-size: 1.25rem;
-    }
-
-    .ovrl_btn {
-        position: absolute;
-        top: 80%;
-        left: 40%;
-        z-index: 1;
-        font-family: Montserrat;
-        background-color: #FF734F;
-        color: #FFFFFF;
-        border-radius: 9px;
-        text-align: center;
-        display: inline-block;
-        font-size: 15px;
-        border: none;
-        padding: 10px;
-    }
-}
 
 
 
 /*Tutorial Page CSS*/
-.org_link{
+.org_link {
     color: #EA5A47;
     text-decoration: none;
 }
-.org_link:hover{
+
+.org_link:hover {
     color: hsla(12, 100%, 59%, 0.64);
 }
 
@@ -229,7 +201,7 @@ body {
     --bs-pagination-color: #FF734F;
     --bs-pagination-hover-color: #ffffff;
     --bs-pagination-hover-bg: #FF734F;
-   --bs-pagination-border-radius: none;
+    --bs-pagination-border-radius: none;
     padding-left: unset;
     justify-content: center;
     --bs-pagination-focus-color: #FF734F;
@@ -237,13 +209,14 @@ body {
     --bs-pagination-focus-bg: #0f0f0f;
 
 }
+
 /**/
 
 
 /*Form CSS*/
 .f-label {
-    color: #F24E1E!important;
-    border-color: #F24E1E!important;
+    color: #F24E1E !important;
+    border-color: #F24E1E !important;
     font-weight: 500;
     font-size: 1.22rem;
     margin-bottom: 10px;
@@ -257,10 +230,10 @@ body {
 
     opacity: 1;
     transition: .3s;
-    min-height: 51px!important;
+    min-height: 51px !important;
     font-size: 1.0rem;
     font-weight: 500;
-    outline: 1px solid transparent!important;
+    outline: 1px solid transparent !important;
     display: block;
     width: 100%;
 
@@ -270,13 +243,15 @@ body {
     margin-bottom: 30px;
     font-family: 'Montserrat-Medium';
 }
+
 .f-input:hover {
-    border-color: rgba(242,78,30,0.7)!important;
-    filter: contrast(0.95)!important;
+    border-color: rgba(242, 78, 30, 0.7) !important;
+    filter: contrast(0.95) !important;
 }
-.f-input:focus{
-    border-color: rgba(242,78,30,0.7)!important;
-    filter: contrast(0.95)!important;
+
+.f-input:focus {
+    border-color: rgba(242, 78, 30, 0.7) !important;
+    filter: contrast(0.95) !important;
 }
 
 .form-check {
@@ -288,29 +263,43 @@ body {
     background-color: #ff734f;
     border-color: #ff734f;
 }
+
 .form-check-input:checked[type=radio] {
     --bs-form-check-bg-image: unset;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #ff734f;
     border-color: #FF734F;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #292526;
     border-color: #292526;
     color: white;
 }
 
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     color: var(--bs-btn-active-color);
     background-color: #f24e1e;
     border-color: #f24e1e;
 }
+
 /**/
 
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+@media screen and (max-width: 1024px) {
+    .navbar-nav {
+        gap: unset;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .pick_your_color {
@@ -324,7 +313,7 @@ body {
     .overlay {
         position: absolute;
         top: 15%;
-        left: 5%;
+        left: 1%;
     }
 
     .ovrl_btn {
@@ -343,8 +332,6 @@ body {
         padding: 10px;
     }
 
-}
-@media screen and (max-width: 600px) {
     .table tr {
         display: block;
         margin-bottom: 15px;
@@ -354,5 +341,67 @@ body {
         display: block;
         width: 100%;
         box-sizing: border-box;
+    }
+
+}
+
+@media screen and (min-width: 601px) {
+    .pick_your_color {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 527px) {
+    .pick_your_color {
+        font-size: 1.25rem;
+    }
+
+    .ovrl_btn {
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        z-index: 1;
+        font-family: Montserrat;
+        background-color: #FF734F;
+        color: #FFFFFF;
+        border-radius: 9px;
+        text-align: center;
+        display: inline-block;
+        font-size: 15px;
+        border: none;
+        padding: 10px;
+    }
+}
+
+/* Screens below 425px */
+@media (max-width: 508px) {
+    .font-size-xsmall {
+        font-size: x-small;
+    }
+
+    .font-size-large {
+        font-size: large;
+    }
+
+    .font-size-xsmall-unset {
+        font-size: x-small;
+        width: unset;
+    }
+
+    .custom-position {
+        position: absolute;
+        top: 81%;
+        left: 16%;
+        font-size: 7px;
+        height: 29px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        width: -webkit-fill-available;
+        height  : -webkit-fill-available;
     }
 }
